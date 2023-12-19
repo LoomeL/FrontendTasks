@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 37.1</title>
+</head>
+<body>
+<script>
+    function func1(name) {
+        return `Привет ${name}!`;
+    }
+
+    console.log(func1('Georgy'));
+
+    const func2 = function (name) {
+        return `Привет ${name}!`;
+    };
+    console.log(func2('Georgy'));
+
+    const func3 = name => `Привет ${name}!`;
+    console.log(func3('Georgy'));
+
+    const func4 = name => {
+        return `Привет ${name}!`;
+    };
+    console.log(func4('Georgy'));
+</script>
+</body>
+</html>

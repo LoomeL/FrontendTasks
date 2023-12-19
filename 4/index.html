@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <div>
+            <label for="name">ФИО</label>
+            <input id="name" type="text" placeholder="ФИО" value="" required>
+        </div>
+        <div>
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" placeholder="Email" disabled>
+        </div>
+        <div>
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="Telephone">
+        </div>
+        <div>
+            <label for="number">Число</label>
+            <input type="number" name="number" id="number" placeholder="Number">
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Password" readonly>
+        </div>
+        <div>
+            <label for="file">Файл</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="date">Дата</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="color">Цвет</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <div>
+                <label for="apple">Яблоко</label>
+                <input type="checkbox" name="fruits" id="apple">
+            </div>
+            <div>
+                <label for="rasberry">Малина</label>
+                <input type="checkbox" name="fruits" id="rasberry">
+            </div>
+            <div>
+                <label for="banana">Банан</label>
+                <input type="checkbox" name="fruits" id="banana">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="cat">Кошка</label>
+                <input type="radio" name="animals" id="cat" value="1">
+            </div>
+
+            <div>
+                <label for="dog">Собака</label>
+                <input type="radio" name="animals" id="dog" value="2">
+            </div>
+
+            <div>
+                <label for="bird">Птица</label>
+                <input type="radio" name="animals" id="bird" value="3">
+            </div>
+
+            <div>
+                <label for="fish">Рыба</label>
+                <input type="radio" name="animals" id="fish" value="4">
+            </div>
+        </div>
+        <div>
+            <label for="textarea">Текстовое поле</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="select">Селект</label>
+            <select name="select" id="select">
+                <option value="option1">Опция 1</option>
+                <option value="option2">Опция 2</option>
+                <option value="option3">Опция 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="multi-select">Мульти селект</label>
+            <select name="multi-select" id="multi-select" multiple>
+                <option value="option1">Другая опция 1</option>
+                <option value="option2">Другая опция 2</option>
+                <option value="option3">Другая опция 3</option>
+            </select>
+        </div>
+        <input type="text" hidden>
+        <button>Отправить</button>
+        <button type="reset">Сброс</button>
+    </form>
+</div>
+</body>
+</html>
