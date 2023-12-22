@@ -30,3 +30,48 @@ body{
     width: 100%;
     margin: 0 auto;
 }
+
+.navbar {
+    display: flex;
+}
+
+.navbar__item {
+    background-color: rgba(215,215,215, .5);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.navbar__item:hover {
+    background-color: rgba(215,215,215, 1);
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.navbar__dropdown {
+    white-space: nowrap;
+    background-color: rgba(215,215,215, .5);
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 0;
+    top: 37px;
+    left: 0;
+    display: none;
+}
+
+.navbar__item:hover .navbar__dropdown,
+.navbar__dropdown:hover {
+    display: block;
+}
+
+.dropdown__item {
+    padding: 6px 10px;
+}
+
+.dropdown__item:hover {
+    background-color: rgba(215,215,215, 1);
+}
