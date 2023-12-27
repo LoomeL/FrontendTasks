@@ -6,17 +6,18 @@
     <title>Задание 44</title>
 </head>
 <body>
-<script>
-    const fructs = ['Банан', 'Арбуз', 'Яблоко', 'Виноград', 'Груша'];
-    const appleIndex = fructs.indexOf('Яблоко');
-    if (appleIndex !== -1) {
-        fructs.splice(appleIndex, 1);
-    }
+    <script>
+        const fructs = ['Банан', 'Арбуз', 'Яблоко', 'Виноград', 'Груша'];
 
-    fructs.shift();
-    fructs.pop();
+        const appleIndex = fructs.indexOf('Яблоко');
+        if (appleIndex !== -1) {
+            fructs.splice(appleIndex, 1);
+        }
 
-    console.log(fructs)
-</script>
+        fructs.shift();
+        fructs.pop();
+
+        console.log(fructs)
+    </script>
 </body>
 </html>
