@@ -31,25 +31,10 @@ body {
 }
 
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 20px;
-    padding: 0 100px;
-}
-
-
 /*ширина экрана <= 1292px*/
 @media (max-width: 1291px) {
     .container {
         max-width: 1024px;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 20px;
-        padding: 0 50px;
     }
 }
 
@@ -57,13 +42,6 @@ body {
 @media (max-width: 1023px) {
     .container {
         max-width: 768px;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 20px;
-        padding: 0 20px;
     }
 }
 
@@ -74,22 +52,11 @@ body {
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 20px;
-    }
 }
 
 /*ширина экрана <= 576px*/
 @media (max-width: 575px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 20px;
-        padding: 0 12px;
-    }
+
 }
 
 .color {
@@ -97,9 +64,6 @@ body {
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .page__cell {
@@ -130,8 +94,42 @@ body {
 }
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 100px;
+}
+
+/*ширина экрана <= 1292px*/
+@media (max-width: 1291px) {
+    .gallery {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+/*ширина экрана <= 1024px*/
+@media (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/*ширина экрана <= 768px*/
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/*ширина экрана <= 576px*/
+@media (max-width: 575px) {
+    .gallery {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
 .gallery__item {
     height: 200px;
-    width: 150px;
     background-color: beige;
 }
