@@ -43,12 +43,12 @@
         document.querySelector(".js-button").addEventListener('click', () => {
             const inputValue = document.querySelector('.js-input').value;
 
-            localStorage.setItem('name', inputValue)
+            localStorage.setItem('name', JSON.stringify({input: inputValue}))
 
-            document.querySelector('.js-name').innerText = localStorage.getItem('name');
+            document.querySelector('.js-name').innerText = JSON.parse(localStorage.getItem('name')).input;
         })
 
-        document.querySelector('.js-name').innerText = localStorage.getItem('name');
+        document.querySelector('.js-name').innerText = JSON.parse(localStorage.getItem('name')).input;
 
     </script>
 </body>

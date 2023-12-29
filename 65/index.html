@@ -126,12 +126,12 @@
     const select = document.querySelector('.js-select')
     const search = document.querySelector('.js-search')
 
+    const formatter = Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    })
     function printProducts(data) {
         products.innerHTML = ''
-        const formatter = Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD'
-        })
         data.forEach((item) => {
             const product = `<div class="product">
                 <img class="product__img" src="${item.thumbnail}" alt="">
